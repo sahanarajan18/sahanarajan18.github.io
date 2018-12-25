@@ -4,20 +4,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 div.ex1 {
-  background-color: white;
+  background-color: transparent;
   color: black;
   width: 270px;
-  height: 300px;
+  height: 450px;
   overflow: scroll;
 }
-* {
-  box-sizing: border-box;
-}
+
 .menu {
   float:left;
   width:20%;
   text-align:center;
 }
+
 .menu a {
   background-color:#ffcc66;
   padding:8px;
@@ -40,20 +39,81 @@ div.ex1 {
   text-align:center;
 }
 
+.bottom{
+background-color:#ffcc66;
+text-align:center;
+padding:10px;
+margin-top:7px;
+} 
+
+a.footnote {
+   text-decoration:none;
+   background-color: #FEF6BB;
+   padding-left: 2px;
+   padding-right: 3px;
+   margin-right: 2px;
+} 
+
+a.footnote span {
+   opacity: 0;
+   position: fixed;
+   z-index:1;
+   bottom: 20px;
+   left: 0;
+   margin-left: 8px;
+   margin-right: 18px;
+   padding:14px 20px;
+   border-radius:4px; box-shadow: 5px 5px 8px #CCC;
+   border:1px solid #DCA;
+   background-color: #FEF6BB;
+   font-size: 85%;
+   color: #191950;
+   font-style: italic;
+   -webkit-transition: all 1s ease;
+   -moz-transition: all 1s ease;
+   -o-transition: all 1s ease;
+   transition: all 1s ease;
+   -webkit-transition-delay: 1s;
+   -moz-transition-delay: 1s;
+   -o-transition-delay: 1s;
+   transition-delay: 1s;
+}
+
+a.footnote:hover span {
+   opacity: 1;
+   display: block;
+}
+
+#container{
+    width: 400px;
+    background: white;
+}
+#floated{
+    float: left;
+    width: 150px;
+    background: white;
+}
+* {
+  box-sizing: border-box;
+}
+
 @media only screen and (max-width:620px) {
   /* For mobile phones: */
   .menu, .main, .right {
     width:100%;
   }
   
-
+ 
 }
 </style>
 </head>
+
+
 <body style="font-family:Verdana;color:#000000;">
 
-<div style="background-color:#ffcc66;padding:15px;text-align:center;">
-  <h1>Sahana Rajan</h1>
+<div style="background-color:#ffcc66;padding:15px; text-align:center;">
+<h1><span style="">Sahana Rajan </span> </h1>
+ <span><img src="photo.jpg" style="vertical-align:middle" alt="Display Picture" width="120" height="150"></span>
 </div>
 
 <div style="overflow:auto">
@@ -74,8 +134,16 @@ div.ex1 {
   </div>
 
   <div class="main">
-    <h2>Lorum Ipsum</h2>
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+    <h2></h2>
+    <p>We live with our beautiful mutt dog, Baby. He was rescued from the street and brought home a few years ago. He was such a shy little child!</p><p>Over the last 3 years, he has changed incredibly- he is much more comfortable with animals around him (including us) and he doesn't hide under the bed, shivering at contact, anymore (he is on the other end of the spectrum now!- the first to greet whoever enters the room).</p>
+	<p> Is the then-Baby the now-Baby? </p>
+	<div id="container">
+    <div id="floated"><img src="baby.jpg" alt="Baby" width="120" height="150"></div></div>
+	<p> What has changed and what remains the same?  </p>
+	<p> Someone who is highly optimistic about continuity of identity could say that there is something that Baby is, something unchanging that has continued across these years. There could also be a viable option that there are some things about Baby which have changed and others which have/will remain the same. </p>
+	<p>An alternative to such confidence about continuity of identity would be to say that nothing about Baby is the same. The only similarity that now-Baby has to then-Baby is that they both belong to canis lupus familiaris, a subspecies of wolves. Personal identity of Baby, that is, the ways in which Baby behaves with the world around him now are completely different from how he behaved with the world then.</p>
+	<p> Systematizing the above view, Process Structural Realism (PSR) answers that there has been a continuation of structure (which determines his memebership as a kind in the world), that is, Baby is still a member of canis lupus familiaris; however, his identity (who-he-is<a class="footnote">&sup1<span> If there is a who-he-is at all is very much a contested topic in general metaphysics. This also forms a part of my research.</span></a>) is the way in which he relates with the world around him (via interactions) and that has clearly (almost completely) changed. 
+	<p> Talking about identity across time forms a tiny and significant part of my research on foundation of processes. My primary research is on Process Structural Realism and currently, I am engaging with the relations without relata objection raised against Ontic Structure Realism. As a response to the challenge, I am developing Interactivist Ontology (a species of PSR) as a worthy candidate to alleviate the objection and to adequately answer the pessimistic meta-induction and no-miracles arguments. </p>
   </div>
 
   <div class="right">
@@ -87,7 +155,8 @@ div.ex1 {
 	<p><div style="padding: 10px;background-color:#ffcc66;border: 1px solid maroon;text-align:center"><a href ="https://du-in.academia.edu/SahanaRajan">Academia.edu</a></div></p>
   </div>
 </div>
-<div style="background-color:#ffcc66;text-align:center;padding:10px;margin-top:7px;"> 	&#169 Sahana Rajan</div>
+
+<div class="bottom"> &#169 Sahana Rajan</div>
 
 </body>
 </html>
